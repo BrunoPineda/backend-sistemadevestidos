@@ -43,7 +43,7 @@ exports.registrarUsuario = async (req, res) => {
         });
     } catch (error) {
         console.error(error);
-        res.status(500).json({ msg: 'Hubo un error en el servidor' });
+        res.status(500).json({ msg: 'Hubo un error en el servidor'+500 });
     }
 };
 
@@ -83,7 +83,7 @@ exports.login = async (req, res) => {
         });
     } catch (error) {
         console.error(error);
-        res.status(500).json({ msg: 'Hubo un error en el servidor' });
+        res.status(500).json({ msg: 'Hubo un error en el servidor '+error });
     }
 };
 
